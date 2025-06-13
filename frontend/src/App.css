@@ -1,0 +1,268 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url('https://images.pexels.com/photos/26600254/pexels-photo-26600254.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  color: #333; /* Default text color, can be overridden */
+}
+
+.App {
+  text-align: center;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url('https://images.pexels.com/photos/26600254/pexels-photo-26600254.jpeg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  color: white; 
+  padding: 8rem 2rem 6rem; 
+  text-align: center; 
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column; /* Added to align with previous flex properties */
+  align-items: center; 
+  justify-content: center; 
+  box-sizing: border-box; /* Retained from previous styles */
+}
+
+.hero-content {
+  position: relative; /* Ensure content is above the pseudo-element */
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3.5em; /* Larger for hero title */
+  margin-bottom: 0.25em;
+  font-weight: bold;
+}
+
+.hero-content h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.75em;
+  font-weight: normal;
+}
+
+.hero-description {
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto 2em auto;
+  line-height: 1.6;
+}
+
+.hero-button {
+  background-color: white;
+  color: #34495e; /* Darker color to match new gradient */
+  padding: 15px 35px;
+  border: none;
+  border-radius: 50px; /* Pill shape */
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Styles for the form page (after clicking 'Get Started') */
+.App-header {
+  background-color: rgba(74, 144, 226, 0.8); /* A nice blue, slightly transparent */
+  padding: 20px 0;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.App-header p {
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+.App-main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly dark semi-transparent black */
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+  color: #f0f0f0; /* Light gray text for contrast against dark background */
+}
+
+.profile-form h2 {
+  color: #202223; /* Lighter blue for heading */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #555; /* Darker border */
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #e0e0e0; /* Lighter label color */
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: calc(100% - 22px); /* Account for padding and border */
+  padding: 10px;
+  border: 1px solid #555; /* Darker border */
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box; /* Ensures padding doesn't add to width */
+  background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent light background for inputs */
+  color: #f0f0f0; /* Light text in inputs */
+}
+
+.form-group textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #5cb85c; /* Green */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #4cae4c;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.suggestion-result {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Darker background for suggestion */
+  border-left: 5px solid #6cb2f2; /* Lighter blue border */
+  text-align: left;
+  border-radius: 4px;
+  color: #f0f0f0; /* Light text for suggestion */
+}
+
+.suggestion-result h2 {
+  margin-top: 0;
+  color: #6cb2f2; /* Lighter blue for suggestion heading */
+}
+
+.suggestion-result pre {
+  white-space: pre-wrap; /* Allows text to wrap */
+  word-wrap: break-word; /* Breaks long words */
+  background-color: rgba(255, 255, 255, 0.05); /* Very subtle light background for pre */
+  padding: 15px;
+  border-radius: 4px;
+  border: 1px solid #555; /* Darker border for pre */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: #f0f0f0; /* Light text in pre */
+}
+
+.error-message {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8d7da; /* Light red */
+  color: #721c24; /* Dark red */
+  border: 1px solid #f5c6cb; /* Reddish border */
+  border-radius: 4px;
+  text-align: left;
+}
+
+.App-footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: #333;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+/* Ensure hero content is above the overlay */
+.hero-content h1,
+.hero-content h2,
+.hero-content .hero-description,
+.hero-content .hero-button {
+  position: relative;
+  z-index: 1;
+}
+
+/* Basic Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.8em;
+  }
+  .hero-content h2 {
+    font-size: 1.5em;
+  }
+  .hero-description {
+    font-size: 1em;
+  }
+  .hero-button {
+    font-size: 1.1em;
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .App-main {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .App-header h1 {
+    font-size: 2em;
+  }
+
+  .form-group input[type="text"],
+  .form-group textarea {
+    font-size: 0.95em;
+  }
+
+  .submit-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2em;
+  }
+  .hero-content h2 {
+    font-size: 1.3em;
+  }
+  .hero-description {
+    font-size: 0.9em;
+  }
+  .hero-button {
+    font-size: 1em;
+    padding: 10px 25px;
+  }
+}
