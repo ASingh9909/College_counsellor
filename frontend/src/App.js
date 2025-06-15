@@ -29,7 +29,7 @@ function App() {
     setSuggestion('');
 
     try {
-      const response = await fetch('http://localhost:5001/api/counsel', {
+      const response = await fetch('/api/counsel', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
