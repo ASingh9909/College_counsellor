@@ -59,8 +59,8 @@ function App() {
     return (
       <div className="App hero-section">
         <div className="hero-content">
-          <h1>Career Counsellor</h1>
-          <h2>Find Your Perfect College Match</h2>
+          <h1>College Ikigai</h1>
+          <h2>Not all who wander are lost...find your dream college today</h2>
           <p className="hero-description">
             Discover colleges where you have the best chance of admission based on your academic profile, interests, and achievements.
           </p>
